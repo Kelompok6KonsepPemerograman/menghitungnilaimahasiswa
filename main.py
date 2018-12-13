@@ -29,3 +29,16 @@ if rata_rata <= 50 :
 	print ("keterangan : tidak lulus")
 else :
 	print ("keterangan : lulus")
+
+def meyimpan_biodata(nama_Mahasiswa,nim_mahasiswa,nilai_keaktifan,nilai_tugas,nilai_uts,nilai_uas,nilai_rata_rata,jumlah_nilai_keseluruhan,nilai_huruf,keterangan):
+	file = open("database.txt","a+")
+	data = file.write("nama_Mahasiswa: %s \n"% (nama_Mahasiswa))
+	data = file.write("nim_mahasiswa :%s \n"% (nim_mahasiswa))
+	data = file.write("nilai_keaktifan: %s \n"% (nilai_keaktifan))
+	data = file.write("nilai_tugas: %s \n"% (nilai_tugas))
+	data = file.write("nilai_uts: %s \n"% (nilai_uts))
+	data = file.write("nilai_uas: %s \n"% (nilai_uas))
+	data = file.write("nilai_rata_rata: %s \n"% (nilai_rata_rata))
+	data = file.write("jumlah_nilai_keseluruhan: %s \n"% (jumlah_nilai_keseluruhan))
+	data = file.write("nilai_huruf: %s \n"% (nilai_huruf))
+	data = file.write("keterangan: %s \n"% (keterangan))
