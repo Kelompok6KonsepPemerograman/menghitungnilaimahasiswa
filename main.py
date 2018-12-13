@@ -42,3 +42,6 @@ def meyimpan_biodata(nama_Mahasiswa,nim_mahasiswa,nilai_keaktifan,nilai_tugas,ni
 	data = file.write("jumlah_nilai_keseluruhan: %s \n"% (jumlah_nilai_keseluruhan))
 	data = file.write("nilai_huruf: %s \n"% (nilai_huruf))
 	data = file.write("keterangan: %s \n"% (keterangan))
+def tampilkan_semua_biodata():
+	file = open("database.txt","r")
+	print(file.read())
