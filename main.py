@@ -52,3 +52,19 @@ def option():
 	print("3. keluar program penghitungan nilai mahasiswa")
 	pilihan = int(input("masukkan pilihan anda : "))
 	return pilihan
+while (pilihan<3):
+	pilihan = option()
+	if(pilihan==1):
+		nama_Mahasiswa = str(input("masukkan nama_Mahasiswa : "))
+		nim_mahasiswa = str(input("masukkan nim_mahasiswa : "))
+		nilai_keaktifan= str(input("masukkan nilai_keaktifan : "))
+		nilai_tugas= str(input("masukkan nilai_tugas: "))
+		nilai_uts= str(input("masukkan nilai_uts : "))
+		nilai_uas= str(input("masukkan nilai_uas : "))
+		nilai_rata_rata= str(input("masukkn nilai_rata_rata : "))
+		jumlah_nilai_keseluruhan= str(input("jumlah_nilai_keseluruhan : "))
+		nilai_huruf= str(input("masukkan nilai_huruf : "))
+		keterangan= str(input("masukkan keterangan : "))
+		meyimpan_biodata(nama_Mahasiswa,nim_mahasiswa,nilai_keaktifan,nilai_tugas,nilai_uts,nilai_uas,nilai_rata_rata,jumlah_nilai_keseluruhan,nilai_huruf,keterangan)
+	elif(pilihan==2):
+		tampilkan_semua_biodata()
