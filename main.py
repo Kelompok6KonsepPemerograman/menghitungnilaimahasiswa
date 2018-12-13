@@ -45,3 +45,10 @@ def meyimpan_biodata(nama_Mahasiswa,nim_mahasiswa,nilai_keaktifan,nilai_tugas,ni
 def tampilkan_semua_biodata():
 	file = open("database.txt","r")
 	print(file.read())
+def option():
+	print("lanjutkan untuk meyimpan data")
+	print("1. menyimpan data")
+	print("2. tampilkan data mahasiswa")
+	print("3. keluar program penghitungan nilai mahasiswa")
+	pilihan = int(input("masukkan pilihan anda : "))
+	return pilihan
