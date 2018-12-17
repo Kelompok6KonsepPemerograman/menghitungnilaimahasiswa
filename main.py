@@ -52,6 +52,7 @@ def option():
 	print("3. keluar program penghitungan nilai mahasiswa")
 	pilihan = int(input("masukkan pilihan anda : "))
 	return pilihan
+pilihan	=	true
 while (pilihan<3):
 	pilihan = option()
 	if(pilihan==1):
